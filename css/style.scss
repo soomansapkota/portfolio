@@ -10,7 +10,7 @@ nav {
     align-items: center;
     justify-content: flex-end;
     height: 4rem;
-    background-color: bisque;
+    background-color: transparent;
 
 
     ul {
@@ -21,12 +21,12 @@ nav {
             font-size: 1.6rem;
             display: inline;
             padding: 0.5rem;
-            border-bottom: rgb(57, 193, 227, 0);
+            border-bottom: rgba(247, 112, 112, 0.5);
 
 
             &:hover {
-
-                border-bottom: 0.3rem solid rgb(57, 193, 227, 0.5);
+               
+                border-bottom: 0.3rem solid rgba(247, 112, 112, 0.5);
                 transition: border-bottom 150ms ease-in-out;
 
             }
@@ -44,17 +44,21 @@ nav {
                 display: inline-block;
                 size: 1rem;
 
+                
+
             }
         }
     }
 }
-
+.big-container{
+    height:100vh;
+    background: linear-gradient(100deg, rgb(226, 201, 166), rgb(131, 207, 235));
 .container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(100deg, rgb(226, 201, 166), rgb(131, 207, 235));
+   
 
     .card {
         display: flex;
@@ -82,4 +86,5 @@ nav {
 
         }
     }
+}
 }
