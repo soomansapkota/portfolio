@@ -82,14 +82,9 @@ nav ul li a {
 }
 .big-container .container .card .card-right {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   height: 100%;
-  width: 50%;
-}
-@media (max-width: 768px) {
-  .big-container .container .card .card-right {
-    width: 40%;
-  }
+  width: 70%;
 }
 .big-container .container .card .card-right .content-card-right .dynamic {
   display: block;
@@ -173,11 +168,11 @@ nav ul li a {
 .big-container .container .card .card-right .contacts-links {
   position: absolute;
   height: 4rem;
-  transform: translate(9rem, 27.5rem);
+  transform: translate(-1.5rem, 30rem);
 }
-@media (max-width: 780px) {
+@media (max-width: 1080px) {
   .big-container .container .card .card-right .contacts-links {
-    transform: translate(-2.4rem, 28rem);
+    transform: translate(-2.3rem, 30rem);
   }
 }
 .big-container .container .card .card-right .contacts-links ul {
