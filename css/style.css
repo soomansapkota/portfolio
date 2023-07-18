@@ -214,7 +214,7 @@ nav ul li a {
 }
 
 #projects {
-  height: 100vh;
+  height: 100%;
 }
 #projects .container {
   height: 100%;
@@ -257,9 +257,8 @@ nav ul li a {
   }
 }
 #projects .container .timeline .contains {
-  padding: 10px 40px;
+  padding: 8rem 3rem;
   position: relative;
-  background-color: inherit;
   width: 50%;
   /* The circles on the timeline */
 }
@@ -280,7 +279,7 @@ nav ul li a {
   left: 0;
 }
 #projects .container .timeline .left-timeline::before {
-  content: " ";
+  content: "";
   height: 0;
   position: absolute;
   right: 1rem;
@@ -298,10 +297,10 @@ nav ul li a {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 30%;
   width: 0;
   z-index: 1;
-  left: 30px;
+  left: 50%;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
