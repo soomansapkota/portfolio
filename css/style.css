@@ -218,8 +218,6 @@ nav ul li a {
 }
 #projects .container {
   height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 #projects .container .heading {
   font-size: 2.5rem;
@@ -234,14 +232,16 @@ nav ul li a {
     font-size: 2rem;
   }
 }
-#projects .container .timeline {
-  width: 100%;
-  height: 100%;
+#projects .container .timeline-container {
   display: flex;
   flex-direction: column;
+}
+#projects .container .timeline-container .timeline {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
-#projects .container .timeline::after {
+#projects .container .timeline-container .timeline::after {
   content: "";
   position: absolute;
   width: 0.3rem;
@@ -252,33 +252,33 @@ nav ul li a {
   background-color: rgb(225, 233, 236);
 }
 @media (max-width: 600px) {
-  #projects .container .timeline::after {
+  #projects .container .timeline-container .timeline::after {
     left: 2rem;
   }
 }
-#projects .container .timeline .contains {
+#projects .container .timeline-container .timeline .contains {
   padding: 8rem 3rem;
   position: relative;
   width: 50%;
   /* The circles on the timeline */
 }
-#projects .container .timeline .contains::after {
+#projects .container .timeline-container .timeline .contains::after {
   content: "";
   position: absolute;
   width: 1.8rem;
   height: 1.8rem;
-  right: -1.4rem;
+  right: -1.5rem;
   top: 4rem;
   background-color: white;
   border: 4px solid #FF9F55;
   border-radius: 50%;
   z-index: 1;
 }
-#projects .container .timeline .left-timeline {
+#projects .container .timeline-container .timeline .left-timeline {
   width: 50%;
   left: 0;
 }
-#projects .container .timeline .left-timeline::before {
+#projects .container .timeline-container .timeline .left-timeline::before {
   content: "";
   height: 0;
   position: absolute;
@@ -290,17 +290,17 @@ nav ul li a {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
 }
-#projects .container .timeline .right-timeline {
-  right: 0;
+#projects .container .timeline-container .timeline .right-timeline {
+  right: 100%;
 }
-#projects .container .timeline .right-timeline::before {
-  content: " ";
+#projects .container .timeline-container .timeline .right-timeline::before {
+  content: "";
   height: 0;
   position: absolute;
-  top: 30%;
+  top: 4.5rem;
   width: 0;
   z-index: 1;
-  left: 50%;
+  left: 2rem;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
